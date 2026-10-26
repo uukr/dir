@@ -1,0 +1,58 @@
+{
+  "layer": "top",
+  "modules-left": [
+        "niri/workspaces",
+        "niri/mode",
+    ],
+    "modules-center": [
+        "niri/window"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "cpu",
+        "memory",
+        "clock",
+    ],
+    "niri/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+    "clock": {
+	"format":"{:%a %b %d %Y %H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%FT%TZ}"
+    },
+    "cpu": {
+        "format": "{usage}% CPU",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "{}% MEM"
+    },
+    "network": {
+        "format-wifi": "NET",
+        "format-ethernet": "NET",
+        "tooltip-format": "{essid} ({signalStrength}%) {ifname} via {gwaddr} // {ipaddr}/{cidr}",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    }
+}
