@@ -18,7 +18,7 @@
         "format": "<span style=\"italic\">{}</span>"
     },
     "clock": {
-	"format":"{:%a %b %d %Y %H:%M}",
+	"format":"{:%a %b %d %H:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%FT%TZ}"
     },

@@ -69,6 +69,14 @@ layer-rule {
   }
 }
 
+layer-rule {
+  match namespace="^waybar$"
+  opacity 0.5
+  background-effect {
+      blur true
+  }
+}
+
 window-rule {
   match app-id=r#"firefox$"# title="^Picture-in-Picture$"
   open-floating true
