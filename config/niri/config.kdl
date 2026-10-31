@@ -78,6 +78,15 @@ layer-rule {
   }
 }
 
+layer-rule {
+  match namespace="^launcher$"
+  opacity 0.95
+  background-effect {
+      blur true
+      xray false
+  }
+}
+
 window-rule {
   match app-id=r#"firefox$"# title="^Picture-in-Picture$"
   open-floating true
